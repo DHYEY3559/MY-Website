@@ -1,28 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Trivial change to create a PR -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dhyey website</title>
+    <title>Shivam - Personal Portfolio</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body, html {
-            height: 100%;
-            overflow: auto; /* Enables scrolling */
+        body {
+            font-family: 'Arial', sans-serif; /* More modern font */
+            line-height: 1.6;
+            background-color: #f0f2f5; /* Lighter gray background */
+            color: #333;
+            overflow-x: hidden;
         }
-        img {
-            display: block;
-            width: 100%;
-            height: auto; /* Keep image aspect ratio */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff; /* White background for a cleaner look */
+            color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd; /* Subtle border */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+            color: #007bff; /* Blue color for the name */
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #555; /* Darker gray for nav links */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007bff; /* Blue on hover */
+        }
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #about {
+            text-align: center;
+        }
+        #about img {
+            width: 150px; /* Smaller image */
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #007bff; /* Border color matches the theme */
+        }
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: #333;
+        }
+        .project {
+            margin-bottom: 1.5rem;
+            background: #f9f9f9; /* Slightly different background for projects */
+            padding: 1.5rem;
+            border-radius: 5px;
+            border-left: 5px solid #007bff; /* Accent border */
+        }
+        .project h3 {
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav ul li {
+                margin-right: 10px;
+            }
+            #about img {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="Shivam photo.jpg" alt="Scrollable Photo">
+    <header>
+        <div class="container">
+            <h1>Shivam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <img src="Shivam photo.jpg" alt="Shivam's Photo">
+            <p>Hello! I'm Shivam, a passionate developer with a love for creating innovative solutions.</p>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Description of project one.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Description of project two.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shivam. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
